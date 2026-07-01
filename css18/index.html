@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後代選擇器</title>
+</head>
+<style>
+    #main-content p{
+        color: orange;
+    }
+    #sub-content p{
+        color: blue;
+    }
+</style>
+<body>
+    <div id="main-content">
+        <p>我是後代節點。</p>
+        <p>我是後代節點。</p>
+        <p>我是後代節點。</p>
+        <div id="sub-content">
+            <p>我也是後代節點，而且是 sub-content 的子節點。</p>
+        </div>
+    </div>
+    <p>我不是後代節點。</p>
+</body>
+</html>
