@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鄰居選擇器 Adjacent Selectors</title>
+    <style>
+        /* CSS here */
+        #all-articles h2 + p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="all-articles">
+        <article>
+            <h2>鄰居選擇器</h2>
+            <P>作者 : 張三</P>
+            <p>這是文章內容1...</p>
+        </article>
+        <article>
+            <h2>文章標題2</h2>
+            <p>作者 : 李四</p>
+            <p>這是文章內容2...</p>
+        </article>
+        <article>
+            <h2>文章標題3</h2>
+            <P>作者 : 王五</P>
+            <p>這是文章內容3...</p>
+        </article>
+    </div>
+</body>
+</html>
