@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偽元素</title>
+    <style>
+        h1::first-letter{
+            color: blue;
+        }
+        p::first-line{
+            color: red;
+        }
+        p::selection{
+            background-color: gray;
+            color: #fff;
+        }
+        #fruit li::before{
+            content: "🐽";
+        }
+        #apple::after{
+            content: "🍎";
+        }
+        #orange::after{
+            content: "🍊";
+        }
+        #banana::after{
+            content: "🍌";
+        }
+        #fruit li::marker{
+            content: "🍺";
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 偽元素</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ut quod adipisci eos magni aliquam necessitatibus expedita, incidunt asperiores accusamus ex dolorum mollitia odio quidem consequuntur totam quos maxime repellendus.</p>
+    <ul id="fruit">
+        <li id="apple">蘋果</li>
+        <li id="orange">橘子</li>
+        <li id="banana">香蕉</li>
+    </ul>
+</body>
+</html>
