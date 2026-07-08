@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple flexbox-based responsive design 響應式網頁 RWD</title>
+    <style>
+        body{
+            font: 1.2em Helvetica, Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #eee;
+        }
+        .wrapper{
+            max-width: 960px;
+            margin: 2em auto;
+        }
+        .col1, .col2{
+            background-color: #fff;
+        }
+
+        @media screen and (min-width: 600px){
+            .wrapper{
+                display: flex;
+            }
+            .col1{
+                flex: 1;
+                margin-right: 5%;
+            }
+            .col2{
+                flex: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="col1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum soluta pariatur fugiat ducimus eum animi! Amet laborum maxime ut totam temporibus dolorum fuga ducimus excepturi, labore enim repellendus aspernatur?</p>
+        </div>
+        <div class="col2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui repellendus, deleniti, nulla inventore placeat quae cum delectus expedita iste alias officia quia quam voluptatum commodi. Minima, consequatur eaque. Veritatis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam soluta dolores maiores qui optio saepe officia veniam aut expedita a mollitia iusto libero vel corporis debitis, alias voluptatem fuga voluptatum!</p>
+        </div>
+    </div>
+</body>
+</html>
