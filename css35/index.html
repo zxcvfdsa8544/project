@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 實作簡易相簿</title>
+</head>
+<style>
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: row;
+        max-width: 100vh;
+           }
+    .cards img{
+        max-width: 23vw;
+        border: 1px solid #000;
+        box-shadow: 3px 3px 8px  rgba(0, 0, 0, 0.3);
+        margin: 10px;
+    }
+</style>
+<body>
+    <main class="cards">
+        <img src="./picture_1.jpg" alt="">
+        <img src="./picture_2.jpg" alt="">
+        <img src="./picture_3.jpg" alt="">
+        <img src="./picture_4.jpg" alt="">
+        <img src="./picture_5.jpg" alt="">
+        <img src="./picture_6.jpg" alt="">
+        <img src="./picture_7.jpg" alt="">
+        <img src="./picture_8.jpg" alt="">
+        <img src="./picture_9.jpg" alt="">
+    </main>
+</body>
+</html>
