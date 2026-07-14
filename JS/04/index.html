@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>控制流程 switch</title>
+</head>
+<body>
+    <h1>switch 如果太多如果，用個開關來控制吧!</h1>
+    <script>
+        // boolean true or false
+        // var str = '只被當一科'
+        // if(str === '歐趴'){
+        //     console.log('帶你去歐洲玩')
+        // }else if(str === '只被當一科'){
+        //     console.log('帶你去宜蘭玩')
+        // }else{
+        //     console.log('禁足')
+        // }
+        // 用 switch 改寫 if else
+        var key = ('歐趴')
+        switch (key) {
+            case '歐趴':
+                console.log('帶你去歐洲玩');
+                break;
+            case '只被當一科':
+                console.log('帶你去宜蘭玩');
+                break;
+            default:
+                console.log('禁足')
+                break;
+        }
+    </script>
+</body>
+</html>
