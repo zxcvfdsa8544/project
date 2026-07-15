@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>變數作用的範圍(Scope) 由 function 來界定</h1>
+    <script>
+        var a = 100;
+        function helloWorld(){
+            var a = 150;
+            console.log(a);
+        }
+        helloWorld();
+        console.log(a);
+    </script>
+</body>
+</html>
