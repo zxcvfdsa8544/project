@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>匿名函式 (anonymous function)</h1>
+
+    <script>
+        function heyFunc(myfunction){
+            myfunction('Hi!!');
+        }
+        heyFunc(function(message){
+            console.log('message is: ', message)
+        });
+
+        // function myFunction(message){
+        //     console.log('message is: ', message);
+        // }
+
+    </script>
+</body>
+</html>
