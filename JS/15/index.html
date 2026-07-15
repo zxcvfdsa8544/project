@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>立即函式 IIFE (Immediately Invoked Function Expressions)</h1>
+    <script>
+        // var sayHi = function(name){
+        //     var str = "Hi, " + name + "!"
+        //     console.log(str);
+        // }("Peter")
+        // sayHi("Peter");
+
+        (function(name){
+            var str = "Hi, " + name + "!";
+            console.log(str);
+        })("Peter");
+
+        // JQuery
+        // (function($){
+        //     console.log($);
+        // })(jQuery);
+    </script>
+</body>
+</html>
