@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>如何定義一個涵式? (2) 使用涵式陳述式(Function Statement) 與涵式表達式(Function Expression)</h1>
+    <script>
+        // Function Statement 涵式陳述式
+        helloFunctionStatement()
+        function helloFunctionStatement(){
+            console.log('hello function statement!!');
+        }
+        helloFunctionStatement();
+
+        // Function Expression涵式表達式
+        // helloFunctionExpression();
+        var helloFunctionExpression = function(){
+            console.log('hello function expression');
+        }
+        helloFunctionExpression();
+    </script>
+</body>
+</html>
