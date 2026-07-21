@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>陣列的進階方法 forEach( ) </h1>
+    <script>
+        const array1 = ['a', 'b', 'c'];
+        let forEach = array1.forEach(function(element){
+            return element + 'is good'
+        })
+
+        // let mapResult = array1.map(function(element){
+        //     return element + 'is good'
+        // });
+
+        // for(var i =0; i < array1.length; i++){
+        //     console.log(array1[i] + 'is good');
+        // }
+        array1.forEach((element) => console.log(element + 'is good'));
+    </script>
+</body>
+</html>
