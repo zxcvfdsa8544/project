@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>用 filter 來過濾資料</h1>
+    <script>
+        // var arr = [1,2,3,4,5,6,7,8,9]
+        // new_arr = arr.filter(function(element){
+        //     return (element >=3) && (element<=5);
+        // })
+
+        var arr = [
+            {name: "Tom", age: 20},
+            {name: "Mary", age: 30},
+            {name: "Bill", age: 50}
+        ]
+        new_arr = arr.filter(function(person){
+            return person.name === "Tom";
+        })
+    </script>
+</body>
+</html>
