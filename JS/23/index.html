@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>陣列的進階方法 map()</h1>
+    <script>
+        var dogs = ['Boy1', 'Boy2', 'Girl1', 'Girl2'];
+        // var result = dogs.map(function(dog){
+        //     return dog + ' is good';
+        // });
+        // console.log(result);
+
+        // 用 for
+        function map2(dogs){
+            var result = [];
+            for(var i = 0; i < dogs.length; i++){
+                var str = dogs[i] + 'is good';
+                // console.log(str);
+                result.push(str);
+            }
+            return result;
+        }
+        var mydog = map2(dogs);
+        console.log(mydog);
+        
+
+        // const array1 = [1, 4, 9, 16];
+        // const result3 = array1.map(x => x*2);
+        // console.log(result3);
+
+        // const result2 = array1.map(function(x){
+        //     return x *x;
+        // })
+        // console.log(result2);
+    </script>
+</body>
+</html>
