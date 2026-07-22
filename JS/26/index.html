@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array 陣列的 find( ) 方法，找到第一筆符合條件的資料</h1>
+    <!-- // filter() 過濾 => 符合條件的時候，組成一個陣列 -->
+    <script>
+        const array1 = [5, 12, 12, 130, 44];
+        let found = array1.find(function(number){
+            return number === 12
+        })
+        console.log(found);
+        let filterFound = array1.filter(function(number){
+            return number === 12
+        })
+        console.log("filterFound:", filterFound)
+    </script>
+</body>
+</html>
