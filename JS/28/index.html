@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>let 與 const</h1>
+    <script>
+        // 1.作用域的改變
+        // var => function
+        // let / const => {};
+
+        // ex1 - for 迴圈
+        // let i = 0;
+        // for(let i = 0; i < 10; i++){
+        //     console.log("迴圈跑第" + i + "次");
+        // }
+        // // var會裡面的 i 汙染到外面的 i， let不會
+        // console.log(i);
+
+        // ex2 - if - else
+        // var x = 1;
+        // if(x === 1){
+        //     var x = 5;
+        // }else{
+        //     var x = 10;
+        // }
+        // console.log(x);
+
+        // // ex3 IIFE 立即函式
+        // (function($){
+        //     var x = 1;
+        // })(jQuery);
+        
+        // {
+        //     let x = 1;
+        // }
+
+        // const 常數
+    
+        // const dog = "Peter"
+        // // dog = "Mary"
+        // console.log(dog)
+
+        // 當使用常數const定義物件會怎麼樣?
+        const person = {
+            name: "huang",
+            age: 20
+        }
+        person["name"] = "Json"
+        console.log(person);
+    </script>
+</body>
+</html>
