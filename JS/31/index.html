@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for of</h1>
+    <script>
+        // for of 可以迭代 「可迭代的物件」iterable object // iterator
+        // for in 迭代可列舉屬性
+        var myString = "hello";
+        var myArray = [1,2,3,4,5,6,7];
+
+        for(let str of myString){
+            console.log(str);
+        }
+        for(let arr of myArray){
+            console.log(arr);
+        }
+    </script>
+</body>
+</html>
