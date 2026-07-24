@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>...擴展運算子 Spread Operator</h1>
+    <script>
+        // 使用在陣列上
+        // let arr1 = [1,2,3,4,5]
+        // console.log(arr1);
+        // console.log(Math.min(arr1));
+
+        // console.log(...arr1);
+        // console.log(Math.min(...arr1));
+
+        // 陣列連接
+        // let arr1 = [1,2,3,4,5]
+        // let arr2 = [5,6,7,8,9]
+        // console.log(arr1.concat(arr2));
+
+        // let arr3 = [...arr1, ...arr2]
+        // console.log(arr3);
+
+        // 使用在物件上
+        let obj1 = {a:1, b:2, c:3}
+        let obj2 = {c:5, d:6}
+        
+        let result = {...obj1, ...obj2}
+        console.log(result);
+
+    </script>
+</body>
+</html>
