@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>樣板字面值 Template literals vs 字串字面值 String loterals</h1>
+    <script>
+        // 可以輕鬆換行 `
+        // var str = "abc \n 123";
+        // console.log(str);
+        // var str2 = `122
+        // line2`
+
+        // 嵌入變數
+        let name = "tom"
+        let str = `hello ${name}`
+        console.log(str);
+
+        let str_origin = "hello " + name;
+        console.log(str_origin);
+
+    </script>
+</body>
+</html>
